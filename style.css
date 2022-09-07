@@ -61,7 +61,10 @@ body {
 
 .button {
   position: absolute;
-  inset: 129vw 0vw 0vw 9vw;
+  top: 129vw;
+  right: 0vw;
+  bottom: 0vw;
+  left: 9vw;
   border-radius: 1.5vw;
   box-shadow: 0vw 0vw 3vw 0.5vw #239F679C;
   border: none;
