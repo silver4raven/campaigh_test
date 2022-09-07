@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Monthly Gift</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Custom styles -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+  <!-- Scripts -->
+  <!-- Warply SDK -->
+  <script type="text/javascript" src="https://warply.s3-eu-west-1.amazonaws.com/data/jsapi.js"></script>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- gsap TweenMax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <!--JQuery UI-->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!--Touch punch-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <!--Oath-->
+  <script src="oauth_object.js"></script>
+  <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+
+
+</head>
+
+<body id="body">
+  <!-- page 1 -->
+  <div id="p1" class="page">
+    <button id="p1_button" class="button" onclick="gotFormTo('p1','p2')">Μπες στην κλήρωση</button>
+  </div>
+
+  <!-- page 2 -->
+  <div id="p2" class="page hidden">
+    <button id="p2_button" class="button" onclick="submit()">Αποδέχομαι</button>
+  </div>
+
+  <!-- modal 1 -->
+  <div id="p3" class="page hidden">
+    <button id="m1_button" class="button" onclick="gotFormTo('p3','p4')">OK</button>
+  </div>
+
+  <!-- modal 2 -->
+  <div id="p4" class="page hidden">
+    <button id="m2_button" class="button" onclick="gotFormTo('p4','p2')">OK</button>
+  </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
